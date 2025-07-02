@@ -16,11 +16,11 @@ This project demonstrates how to provision a **production-grade, modular AWS inf
 ---
 
 ## 🧱 Architecture Components
-
+```
                    Internet
                       │
                ┌──────▼──────┐
-               │   ALB (Public)  │
+               │ ALB (Public)│
                └──────┬──────┘
                       │
      ┌────────────────┼────────────────┐
@@ -30,12 +30,12 @@ This project demonstrates how to provision a **production-grade, modular AWS inf
      └────────┬───────┴────────┬───────┘
               ▼                ▼
          RDS (MySQL)     NAT Gateway
-
+```
 
 ---
 
 ## 📁 Module Structure
-
+```
 ├── main.tf # Root Terraform config
 ├── variables.tf
 ├── outputs.tf
@@ -45,7 +45,7 @@ This project demonstrates how to provision a **production-grade, modular AWS inf
 ├── ec2/
 ├── alb/
 └── rds/
-
+```
 
 Each module is reusable and parameterized with input variables and outputs.
 
